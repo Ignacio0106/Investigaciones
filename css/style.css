@@ -7,21 +7,18 @@
 body {
   background-color: #eeeeee;
 }
+.main{
+    margin: 2em 4em 0 4em;
+}
 .header{
     text-align: center;
     font-size: 2rem;
-    margin: 1rem 0;
     color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     background-color: #2874a6;
     padding: 1rem;
     border-radius: 8px;
-        position: relative;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    position: relative;
+    z-index: 1000; 
 }
 #menu-check {
     display: none;
@@ -44,12 +41,11 @@ body {
     align-items: center;
 }
 .item-lista{
-    margin: 0 1rem;
-    border: #333 solid 1px;
+    margin: 0 2rem;
+    border: #007bff solid 1px;
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    color: #007bff;
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 .item-lista:hover{
   background-color: #d6eaf8;
@@ -67,38 +63,15 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
 h3 {
   font-size: 1.4rem;
   margin-top: 1.5rem;
   color: #444;
 }
-
 h4 {
   font-size: 1.2rem;
   margin: 1rem 0;
   color: #555;
-}
-/* h2{
-    font-size: 2rem;
-    color: #2874a6;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-h3{
-    font-size: 1.3rem;
-    color: #555;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-} */
-.main{
-    margin: 0 5%;
 }
 .contenidos{
     margin-bottom: 2rem;
@@ -106,22 +79,35 @@ h3{
     padding: 2rem;
     border-radius: 8px;
 }
-
+.ul{
+    margin-left: 2em;
+}
+ol li p{
+    display: flex;
+    flex-direction: column;
+}
 p {
   margin-bottom: 1rem;
 }
-
+.Referencias{
+    font-style: italic;
+    text-decoration: none;
+    color: #0059ff;
+}
 .ejemplo {
     color: #555;
   font-size: 0.95rem;
 }
-.contenidos:hover{
+.imagenesEjemplos{
+    width: 100px;
+}
+/* .contenidos:hover{
     transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     border: 1px solid #ccc;
 
-}
+} */
     .contenedor{
         background-color: #e2e2e2;
         padding: 2rem;
@@ -151,6 +137,13 @@ p {
         transition: color 0.3s ease-in ;
     }
 
+.ejemplo, .ejemploContenedor {
+  font-style: italic;
+  background-color: #dfe6e9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
     footer{
         text-align: center;
         font-size: 1rem;
