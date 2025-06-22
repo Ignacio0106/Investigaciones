@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEO, Usabilidad Web y Accesibilidad Web</title>
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main class="main">
-        <article id="seo" class="contenidos">
+        <section id="seo" class="contenidos">
             <h2>SEO</h2>
             <h3>¿Qué es?</h3>
             <p>SEO son las siglas en ingles <strong>Search Engine Optimization</strong> que se traduce como <strong>Optimizacion para motores de busqueda</strong>, y es una tecnica implementada en paginas para incrementar su visibilidad y el posicionamiento en los resultados de los motores de busqueda.</p>
@@ -79,8 +79,8 @@
             <li><a class="Referencias" href="https://www.iebschool.com/hub/que-es-seo-social-y-como-puede-ayudar-a-mi-estrategia-de-seo-sem/">IEBS</a>
             </li>
         </ul>
-        </article>
-        <article id="usabilidadWeb" class="contenidos">
+        </section>
+        <section id="usabilidadWeb" class="contenidos">
             <h2>Usabilidad Web</h2>
             <h3>¿Qué es?</h3>
             <p>La usabilidad web es la facilidad que tiene el usuario para poder interactuar con ella, es decir, que sea intuitiva, que pueda encontrar fácil lo que quiere y que sea agradable</p>  
@@ -121,9 +121,9 @@
             <li><a class="Referencias" target="_blank" href="https://diegoamorin.com/wp-content/uploads/2022/12/Heuristica9.png">Mensaje error 404</a> de <a class="Referencias" target="_blank" href="https://diegoamorin.com/10-principios-usabilidad/">Diego Amorin</a></li>
             <li><a class="Referencias" target="_blank" href="https://support.google.com/chrome?p=help&ctx=menu#topic=7439538">Ayuda de Google Chrome</a> de <a class="Referencias" target="_blank" href="https://support.google.com/">Google Chrome</a></li>
         </ul>
-        </article>
+        </section>
         
-        <article id="accesibilidadWeb" class="contenidos">
+        <section id="accesibilidadWeb" class="contenidos">
     <h2>Accesibilidad Web</h2>
     <h3>¿Qué es?</h3>
     <p>La accesibilidad web es la práctica de diseñar y desarrollar páginas web que puedan ser usadas por todas las personas, incluidas aquellas con discapacidades como visuales, auditivas, motoras o cognitivas, agregando herramientas para que puedan navegar por todo el contenido.</p>
@@ -134,7 +134,7 @@
         <li>
             <p><strong>Perceptible:</strong> Todos los usuarios deben poder distinguir el contenido de la página, incluidos los que utilizan tecnologías de asistencia.</p>
             <p class="ejemploContenedor">Ejemplo: Texto alternativo para imágenes</p>
-            <div class="example-box">
+            <div class="ejemplosAccesibilidad">
                 <img src="img/image_3d1e62.png" alt="Un icono abstracto que representa un paisaje con una montaña y un sol o luna, en tonos de azul y blanco.">
                 <div class="code-snippet">
                     &lt;img src="paisaje.jpg" alt="Paisaje montañoso con un lago en primer plano y montañas nevadas al fondo"&gt;
@@ -143,57 +143,51 @@
         </li>
         <li>
             <p><strong>Operable:</strong> Los componentes de la página como botones y formularios deben ser accesibles para el usuario.</p>
-            <p>Navegación por teclado</p>
+            <p class="ejemploContenedor">Ejemplo: Navegación por teclado</p>
+                <section class="ejemplosAccesibilidad">
+                    <button>Botón 1</button>
+                    <button>Botón 2</button>
+                    <button>Botón 3</button>
+                </section>
             <p class="ejemploContenedor">Presiona Tab para navegar entre botones y Enter para activarlos</p>
-            <div class="example-box">
-                <img src="img/image_0e8e27.png" alt="Tres botones con las etiquetas Botón 1, Botón 2, y Botón 3. Debajo, un texto que dice 'Presiona Tab para navegar entre botones y Enter para activarlos'.">
-                <div class="code-snippet">
-                    &lt;button&gt;Botón 1&lt;/button&gt;<br>
-                    &lt;button&gt;Botón 2&lt;/button&gt;<br>
-                    &lt;button&gt;Botón 3&lt;/button&gt;
-                </div>
-            </div>
         </li>
         <li>
             <p><strong>Comprensible:</strong> La información y el funcionamiento deben ser fáciles, legibles y ayudar a no cometer errores.</p>
             <p class="ejemploContenedor">Ejemplo: Formulario con etiquetas claras</p>
-            <div class="example-box">
-                <img src="img/image_0e8ea2.png" alt="Un formulario con campos de texto para 'Nombre completo' y 'Correo electrónico', con un formato de ejemplo 'ejemplo@dominio.com', y un botón de 'Enviar'.">
-                <div class="code-snippet">
-                    &lt;label for="nombre"&gt;Nombre completo&lt;/label&gt;<br>
-                    &lt;input type="text" id="nombre"&gt;<br><br>
-                    &lt;label for="email"&gt;Correo electrónico&lt;/label&gt;<br>
-                    &lt;input type="email" id="email"&gt;
-                </div>
-            </div>
+            <section class="ejemplosAccesibilidad">
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre aquí"><br>
+                    <label for="correo">Correo electronico</label>
+                    <input type="text" name="correo" id="correo" placeholder="Escriba su correo aquí">
+                </form>
+                </section>
         </li>
         <li>
             <p><strong>Robusto:</strong> El sitio web debe ser compatible con tecnologías actuales y futuras, navegadores y tecnologías de asistencia.</p>
-            <p class="ejemploContenedor">Uso de elementos semánticos</p>
-            <div class="example-box">
-                <img src="img/image_0e8e9a.png" alt="Fragmento de código HTML que muestra el uso de etiquetas semánticas: header, h1, nav, ul, li, a, main, article, h2, footer, p.">
+            <p class="ejemploContenedor">Ejemplo: Uso de elementos semánticos</p>
+            <section class="ejemplosAccesibilidad">
                 <pre class="code-block"><code>
 &lt;header&gt;<br>
-  &lt;h1&gt;Título de la página&lt;/h1&gt;
-&lt;/header&gt;
+  &lt;h1&gt;Título de la página&lt;/h1&gt;<br>
+&lt;/header&gt;<br>
+&lt;nav&gt;<br>
+  &lt;ul&gt;<br>
+    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+  &lt;/ul&gt;<br>
+&lt;/nav&gt;<br>
 
-&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;main&gt;
-  &lt;article&gt;
-    &lt;h2&gt;Título del artículo&lt;/h2&gt;
-  &lt;/article&gt;
-&lt;/main&gt;
+&lt;main&gt;<br>
+  &lt;section&gt;<br>
+    &lt;h2&gt;Título de la seccion&lt;/h2&gt;<br>
+  &lt;/section&gt;<br>
+&lt;/main&gt;<br>
 
 &lt;footer&gt;
-  &lt;p&gt;Derechos reservados&lt;/p&gt;
+  &lt;p&gt;&copy;Derechos reservados&lt;/p&gt;
 &lt;/footer&gt;
                 </code></pre>
-            </div>
+            </section>
         </li>
     </ul>
     <p class="Referencia">Referencias</p>
@@ -202,7 +196,7 @@
         <li><a class="Referencias" href="https://www.browserstack.com/guide/accessibility-seo" target="_blank">BrowserStack</a></li>
         <li><a class="Referencias" href="https://www.iberdrola.com/innovacion/que-es-accesibilidad-web" target="_blank">Iberdrola</a></li>
     </ul>
-</article>
+</section>
     </main>
     <footer class="footer">
         <p>&copy; 2025 - Investigaciones Diseño Web</p>
