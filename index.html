@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEO, Usabilidad Web y Accesibilidad Web</title>
+    <meta name='description' content=''>
+    <meta name='keywords' content='SEO, Usabilidad Web, Accesibilidad Web'>
+    <meta name='author' content='Ignacio Arroyo'>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,39 +38,26 @@
                         <p>
                 Para optimizar una pagina web para SEO, se deben seguir varias estrategias:
             <ul class="ul">
-                <li>Utilización palabras clave.</li>
+                <li>Utilización palabras clave</li>
+                <li>Tener una buena URL</li>
                 <li>Crear contenido de calidad y original.</li>
-                <li>Optimizar las meta etiquetas (titulo, descripcion, etc).</li>
+                <li>Crea títulos únicos para cada página</li>
                 <li>Mejorar la velocidad de carga de la pagina.</li>
-                <li>Hacer que la pagina sea responsive (adaptable a dispositivos moviles).</li>
-                <li>Utilizar enlaces internos y externos de calidad.</li>
+                <li>Usa una estructura adecuada usando correctamente las metaetiquetas</li>
+                <li>Utiliza imágenes optimizadas</li>
             </ul>
-            Ademas, es importante realizar un seguimiento y analisis del rendimiento de la pagina para hacer ajustes y
-            mejoras continuas.
-            </p>
-            <p>Los motorers de busqueda funcionan con algoritmos complejos. El SEO tiene optimizaciones que se hacen en
-                el sitio web,
-                que aumenta la calidad de la pagina y a esto se hace que sea más visitado
-                Tienen en cuenta varios factores como:
-            <ul class="ul">
-                <li>Palabras clave</li>
-                <li>Creacion de contenido</li>
-                <li>Optimizacion</li>
-            </ul>
-            </p>
+            Ademas, es importante realizar un seguimiento y analisis del rendimiento de la pagina para hacer ajustes y mejoras continuas.
             </p>
             <h3>¿Qué son las Meta Etiquetas y describir las principales?</h3>
-            <p>Las meta etiquetas son fragmentos de texto que describen el contenido de una pagina web, y se encuentran
-                en el codigo HTML.
-                Son importantes porque ayudan a los motores de busqueda a entender de que trata la pagina, y pueden
-                influir en el posicionamiento.
+            <p>Las meta etiquetas se utilizan para describir el contenido de una página web, y se encuentran en el codigo HTML. Estas se encuentran siempre dentro del head. Los metadatos no se muestran en la página, pero los motores de busqueda podrán analizarlos.
                 Las principales son:
             <ul class="ul">
-                <li><strong>Meta Titulo:</strong> Es el titulo de la pagina que aparece en los resultados de busqueda.
-                </li>
-                <li><strong>Meta Descripcion:</strong> Es un resumen breve del contenido de la pagina.</li>
-                <li><strong>Meta Palabras Clave:</strong> Son palabras o frases clave relacionadas con el contenido de
-                    la pagina.</li>
+                <li><strong>title:</title:></strong> Es el titulo de la pagina que aparece en los resultados de busqueda</li>
+                <li><strong>description:</strong> Es un resumen breve del contenido de la pagina </li>
+                <li><strong>keywords:</strong> Son palabras o frases clave relacionadas con el contenido de la pagina</li>
+                <li><strong>charset:</strong> Define la codificación que utiliza la página</li>
+                <li><strong>author:</strong> Muestra el autor de la página</li>
+                <li><strong>viewport:</strong>Es importante para asegurar que las páginas se vean correctamente en dispositivos móviles</li>
             </ul>
             </p>
             <h3>¿Cómo se aplica el tema en la página de esta investigación?</h3>
@@ -78,6 +68,7 @@
             <li><a class="Referencias" href="https://rockcontent.com/es/blog/que-es-seo/">Rockcontent</a></li>
             <li><a class="Referencias" href="https://www.iebschool.com/hub/que-es-seo-social-y-como-puede-ayudar-a-mi-estrategia-de-seo-sem/">IEBS</a>
             </li>
+            <li><a class="Referencias" href="https://es.wix.com/blog/5-trucos-de-seo-para-posicionar-tu-pagina-web-en-buscadores">Wix Blog</a></li>
         </ul>
         </section>
         <section id="usabilidadWeb" class="contenidos">
@@ -135,9 +126,9 @@
             <p><strong>Perceptible:</strong> Todos los usuarios deben poder distinguir el contenido de la página, incluidos los que utilizan tecnologías de asistencia.</p>
             <p class="ejemploContenedor">Ejemplo: Texto alternativo para imágenes</p>
             <div class="ejemplosAccesibilidad">
-                <img src="img/image_3d1e62.png" alt="Un icono abstracto que representa un paisaje con una montaña y un sol o luna, en tonos de azul y blanco.">
+                <img width="100" src="https://img.icons8.com/ios/100/landscape.png" alt="Paisaje montañoso con montañas y un sol">
                 <div class="code-snippet">
-                    &lt;img src="paisaje.jpg" alt="Paisaje montañoso con un lago en primer plano y montañas nevadas al fondo"&gt;
+                    &lt;img src="paisaje.jpg" alt="Paisaje montañoso con montañas y un sol"&gt;
                 </div>
             </div>
         </li>
@@ -148,8 +139,8 @@
                     <button>Botón 1</button>
                     <button>Botón 2</button>
                     <button>Botón 3</button>
+                    <p>Presiona Tab para navegar entre botones y Enter para activarlos</p>
                 </section>
-            <p class="ejemploContenedor">Presiona Tab para navegar entre botones y Enter para activarlos</p>
         </li>
         <li>
             <p><strong>Comprensible:</strong> La información y el funcionamiento deben ser fáciles, legibles y ayudar a no cometer errores.</p>
@@ -167,26 +158,7 @@
             <p><strong>Robusto:</strong> El sitio web debe ser compatible con tecnologías actuales y futuras, navegadores y tecnologías de asistencia.</p>
             <p class="ejemploContenedor">Ejemplo: Uso de elementos semánticos</p>
             <section class="ejemplosAccesibilidad">
-                <pre class="code-block"><code>
-&lt;header&gt;<br>
-  &lt;h1&gt;Título de la página&lt;/h1&gt;<br>
-&lt;/header&gt;<br>
-&lt;nav&gt;<br>
-  &lt;ul&gt;<br>
-    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
-  &lt;/ul&gt;<br>
-&lt;/nav&gt;<br>
-
-&lt;main&gt;<br>
-  &lt;section&gt;<br>
-    &lt;h2&gt;Título de la seccion&lt;/h2&gt;<br>
-  &lt;/section&gt;<br>
-&lt;/main&gt;<br>
-
-&lt;footer&gt;
-  &lt;p&gt;&copy;Derechos reservados&lt;/p&gt;
-&lt;/footer&gt;
-                </code></pre>
+                <img src="img/Codigo.png" alt="Codigo que contiene elmentos semánticos de html como header, nav, main y footer">
             </section>
         </li>
     </ul>
@@ -195,6 +167,7 @@
         <li><a class="Referencias" href="https://seranking.com/es/blog/accesibilidad-web/" target="_blank">SE Ranking</a></li>
         <li><a class="Referencias" href="https://www.browserstack.com/guide/accessibility-seo" target="_blank">BrowserStack</a></li>
         <li><a class="Referencias" href="https://www.iberdrola.com/innovacion/que-es-accesibilidad-web" target="_blank">Iberdrola</a></li>
+        <li><a class="Referencias" target="_blank" href="https://icons8.com/icon/2601/landscape">Paisaje</a> icono de <a class="Referencias" target="_blank" href="https://icons8.com">Icons8</a></li>
     </ul>
 </section>
     </main>
